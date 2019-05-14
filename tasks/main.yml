@@ -1,0 +1,12 @@
+---
+
+- name: 'Install AWS SSM Agent' # noqa 403
+  yum:
+    name:  '{{ ssm_rpm_path }}'
+    state: 'latest'
+
+- name: 'Start service & enable it at boot'
+  service:
+    name:    'amazon-ssm-agent'
+    enabled: True
+    state:   'started'
