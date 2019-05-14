@@ -1,5 +1,4 @@
 ---
-# tasks file for ansible-role-aws-ssm-agent
 
 - name: 'Install AWS SSM Agent' # noqa 403
   yum:
