@@ -2,8 +2,8 @@
 
 ## 0.0.2
 
-* Fix kitchen
+* test: Fix kitchen
 
 ## 0.0.1
 
-* First import
+* feat: First import
