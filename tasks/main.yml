@@ -4,6 +4,9 @@
   yum:
     name:  '{{ ssm_rpm_path }}'
     state: 'latest'
+  register: ssm_yum_task
+  retries: '{{ ssm_yum_retries }}'
+  until: ssm_yum_task is success
 
 - name: 'Start service & enable it at boot'
   service:
